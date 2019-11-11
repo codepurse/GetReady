@@ -20,10 +20,66 @@ body, html {
     overflow-x: hidden;
 }
 
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 500px;
+    overflow-y: auto;
+}
+.modal-header {
+    background-color: #e83b4f;
+    border: 0px;
+}
+
+.modal-title {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.pmodalsubtitle {
+    font-family: Proxima Nova Semibold;
+    color: #212121;
+    font-size: 1rem;
+}
+
+.pmodaltitle {
+    font-family: Proxima Nova Semibold;
+    color: #e83b4f;
+    font-size: 1rem;
+}
+
+.pmodaltext {
+    font-family: Proxima Nova;
+    color: #212121;
+    font-size: 0.9rem;
+}
+
 .pannouncement {
     font-family: Proxima Nova;
     color: white;
+    font-size: 1.1rem;
+}
+
+.btndecline {
+    font-family: Proxima Nova;
+    color: #e83b4f;
+    padding: 10px 25px;
     font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid #e83b4f;
+}
+
+.btnaccept {
+    font-family: Proxima Nova;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1rem;
+    background-color: #e83b4f;
+    border: 2px solid #e83b4f;
 }
 
 .preadmore {
