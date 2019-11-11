@@ -1,0 +1,99 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../Font/Proxima/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Proxima Nova semibold";
+    src: url("../Font/Proxima/ProximaNova-Semibold.ttf");
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.pannouncement {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+}
+
+.preadmore {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.preadmore:hover, .pclose:hover, .btnabout:hover, .btnfaq:hover, .btncontact:hover, .btnstores:hover {
+    color: #e83b4f !important;
+}
+
+.pclose {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vl {
+    border-left: 1px solid #424242;
+    height: 5px !important;
+    margin-left: 10px;
+}
+
+.btnabout:hover, .btnfaq:hover, .btncontact:hover, .btnstore:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.txtsearch {
+    font-family: Proxima Nova;
+    color: #424242;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid #9E9E9E;
+    outline: none;
+    border-radius: 5px;
+    background: url(../Image/search1.png) no-repeat 97% 7px white;
+    background-size: 18px;
+    width: 250px;
+}
+
+.btnhome:hover, .btnproduct:hover, .btncontact:hover, .btnnews:hover, .btnlogin:hover, .btncart:hover {
+    color: #e83b4f !important;
+}
+
+.ptitle {
+    font-family: Proxima Nova semibold;
+    color: white;
+    font-size: 18px;
+}
+
+.ptitledesc {
+    font-family: Proxima Nova Extrabold;
+    color: white;
+    font-size: 35px;
+    margin-top: -10px;
+    line-height: 120%;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 25px;
+}
+
+.ptrending {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    color: #424242;
+    font-size: 15px;
+}
