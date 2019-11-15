@@ -151,6 +151,22 @@ body, html {
     margin-top: -15px;
 }
 
+.paboutus {
+    font-family: Proxima Nova;
+    color: #212121;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.paboutus1 {
+    font-family: Proxima Nova;
+    color: #616161;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
 .plifekit {
     font-family: Proxima Nova;
     color: #212121;
