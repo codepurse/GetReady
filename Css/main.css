@@ -529,3 +529,12 @@ body, html {
    width: 100%;
    height: 100%;
 }
+
+.pNews1, .pNews2,.pNews3, .pNews4 {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pNews1:hover,.pNews2:hover,.pNews3:hover, .pNews4:hover {
+    color: #e83b4f;
+}
