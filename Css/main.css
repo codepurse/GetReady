@@ -20,15 +20,17 @@ body, html {
     overflow-x: hidden;
 }
 
-
 /* Important part */
-.modal-dialog{
+
+.modal-dialog {
     overflow-y: initial !important
 }
-.modal-body{
+
+.modal-body {
     height: 500px;
     overflow-y: auto;
 }
+
 .modal-header {
     background-color: #e83b4f;
     border: 0px;
@@ -463,20 +465,19 @@ body, html {
     line-height: 140%;
 }
 
-.ulside > li {
+.ulside>li {
     margin: 0 0 8px 0;
 }
 
-.ulside > li:hover {
+.ulside>li:hover {
     color: #e83b4f;
 }
 
 .box {
     margin-top: 20px;
-   
 }
 
-.box > p {
+.box>p {
     font-family: Proxima Nova;
     color: #212121;
     font-size: 1.2rem;
@@ -488,4 +489,43 @@ body, html {
     color: #212121;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.divNews {
+    text-align: justify;
+    border: 1px solid #E0E0E0;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 4px 15px;
+}
+
+.lblNews {
+    font-family: Proxima Nova semibold;
+    font-weight: 500;
+    font-size: 17px;
+    color: #212121;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: example1 15s linear infinite;
+    -webkit-animation: example1 15s linear infinite;
+    animation: example1 15s linear infinite;
+}
+
+.btnNews {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 15px;
+    background-color: #e83b4f;
+    border: 0px;
+    padding: 7px 15px;
+    margin-right: 5px;
+}
+
+.box1 {
+   border: 1px solid grey;
+   width: 100%;
+   height: 100%;
 }
