@@ -143,7 +143,8 @@ body, html {
     font-family: Proxima Nova;
     color: #e83b4f;
     font-weight: bold;
-    margin-top: -15px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .pnewsdesc {
@@ -537,4 +538,11 @@ body, html {
 
 .pNews1:hover,.pNews2:hover,.pNews3:hover, .pNews4:hover {
     color: #e83b4f;
+}
+
+.ptitle {
+    font-family: Proxima Nova Semibold;
+    color: #212121;
+    font-size: 1rem;
+    line-height: 140%;
 }
