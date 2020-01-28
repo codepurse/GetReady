@@ -13,69 +13,31 @@
 </head>
 
 <body>
+    <div class="divLogo">
+        <img src="Image/logo1.png" class="img-fluid" style="width: 150px;">
+    </div>
     <div class="container-fluid h-100">
-            <nav class="navbar navbar-expand-md fixed-top">
-                    <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapse">
-                        <div class="ml-auto">
-                            <ul class="nav navbar-nav">
-                                <ul class="nav navbar-nav">
-                                    <li><a class="nav-link btnservices"
-                                            style="margin-right: 20px;color:white;font-family:Proxima Nova Semibold;font-size: 15px;"
-                                            href="index.html">Home</a></li>
-                                    <li><a class="nav-link btnpackages"
-                                            style="margin-right: 20px;color: white;font-family:Proxima Nova Semibold;font-size: 15px;"
-                                            href="item.html">Product</a></li>
-                                    <li><a class="nav-link btnpackages"
-                                            style="margin-right: 20px;color:white;font-family:Proxima Nova Semibold;font-size: 15px;"
-                                            href="about.html">About</a></li>
-                                    <li><a class="nav-link btnpackages"
-                                            style="margin-right: 20px;color:white;font-family:Proxima Nova Semibold;font-size: 15px;"
-                                            href="contact.html">Contact</a></li>
-                                </ul>
-                                <li><a class="nav-link btnpackages"
-                                        style="margin-right: 20px;color:white;font-family:Proxima Nova Semibold;font-size: 15px;"
-                                        href="404.html"><img src="Image/cart.png" class="img-fluid"
-                                            style="width:18px;margin-right: 10px;margin-top:-5px;">Cart</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link btnservices dropdown-toggle"
-                                        style="margin-right: 20px;color:white;font-family:Proxima Nova Semibold;font-size: 15px;"
-                                        href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"> <img src="Image/profile.png" class="img-fluid"
-                                            style="width:18px;margin-right: 10px;margin-top:-5px;">My Account</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Login</a>
-                                        <a class="dropdown-item" href="#">Sign up</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-4" style="padding-left: 60px;padding-right: 40px;">
-                    <img src="Image/logo1.png" class="img-fluid" style="width: 170px;">
-                    <p class="pwelcome">Welcome to the home of Disaster Preparedness</p>
-                    <p class="pwelcomeback">Welcome Back! Please login <br> to your account.</p>
-                    <div class="form-group" style="margin-top: 40px;">
-                        <label for="inp" class="inp">
-                            <input type="text" id="inp" placeholder="&nbsp;" value="Enter email address">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12 text-center" style="padding-left: 60px;padding-right: 40px;">
+                <p class="pwelcome">SIGN IN</p>
+                <label class="pwelcomeback">Welcome Back! Please login to your account.</label>
+                <div class="form-group" style="margin-top: 40px;">
+                    <label for="inp" class="inp">
+                            <input type="text" id="inp" placeholder="&nbsp;" value="Enter email address" style=" background: url(Image/user.png) no-repeat 97.25% 15px white;padding-right: 30px;">
                             <span class="label">Email address</span>
                             <span class="border"></span>
                         </label>
-                    </div>
-                    <div class="form-group" style="margin-top: 20px;">
-                        <label for="inp" class="inp">
-                            <input type="password" id="inp" placeholder="&nbsp;" value="asdasdasd">
-                            <span class="label">Password</span>
+                </div>
+                <div class="form-group" style="margin-top: 20px;">
+                    <label for="inp" class="inp">
+                            <input type="password" id="inp" placeholder="&nbsp;" value="asdasdasd" style=" background: url(Image/password.png) no-repeat 97.25% 15px white;padding-right: 30px;">
+                            <span class="label" style = "width: 400px;margin-left:-10px;">Password <span style = "margin-left: 170px;"><a href = "#" class = "lblforgot">Forgot password?</a></span></span>
                             <span class="border"></span>
-                        </label>
-                    </div>
-                    <div class="form-group" style="margin-top: 20px;">
-                        <input type="checkbox" id="cbx" style="display: none;">
-                        <label for="cbx" class="check">
+                    </label>
+                </div>
+                <div class="form-group divCheck" style="margin-top: 20px;margin-left: -120px;">
+                    <input type="checkbox" id="cbx" style="display: none;">
+                    <label for="cbx" class="check">
                             <svg width="18px" height="18px" viewBox="0 0 18 18">
                                 <path
                                     d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
@@ -83,19 +45,14 @@
                                 <polyline points="1 9 7 14 15 4"></polyline>
                             </svg>
                         </label>
-                        <span class = "lblremember">Remember me</span>
-                        <span class = "lblforgot float-right">Forgot password?</span>
-                    </div>
-                    <div class = "form-group" style = "margin-top: 30px;">
-                        <button class = "btnlogin">LOG IN</button>
-                        <p class = "pdonthave text-center">Dont have an account?</p>
-                    </div>
+                    <span class="lblremember">Remember me</span>
                 </div>
-                <div class = "col-lg-8 colbg">
-
+                <div class="form-group" style="margin-top: 10px;">
+                    <button class="btnlogin">LOG IN</button>
+                    <p class="pdonthave text-center"><a href="signup.html" style="text-decoration: none !important;color:#e53935;">Dont have an account?</a></p>
                 </div>
             </div>
-
+        </div>
     </div>
 </body>
 

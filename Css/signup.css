@@ -1,8 +1,20 @@
-body, html {
+body,
+html {
     widows: 100%;
     height: 100%;
     scroll-behavior: smooth;
     overflow: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../Font/Proxima/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Proxima Nova semibold";
+    src: url("../Font/Proxima/ProximaNova-Semibold.ttf");
 }
 
 @media only screen and (min-width: 1200px) {
@@ -10,225 +22,199 @@ body, html {
         max-width: 1300px !important;
     }
 }
-@media only screen and (min-width: 1200px) {
-    .con {
-        max-width: 1400px !important;
+
+body {
+    animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
-.maincontainer {
-	height: 100vh;
-	background: linear-gradient(
-    to right, 
-    #F5F5F5 0%, 
-    #F5F5F5 53%, 
-    #1976D2 47%, 
-    #1976D2 100%
-  );
+.divLogo {
+    position: fixed !important;
+    top: 20px;
+    left: 20px;
 }
 
-.btnservices, .btnpackages, .btncontact, .btnregister {
-    color: white;
-    font-family: muli semibold;
-    letter-spacing: .0.7px;
-}
-
-.psignin {
-    color: #233645;
-    font-family: hind;
-    font-size:35px;
-    margin-top:70px;
+.pGetting {
+    font-family: Roboto, sans-serif;
     font-weight: bold;
-}
-
-.psignin1 {
     color: #424242;
-    font-family: hind;
-    font-size:18px;
-    margin-top:-5px;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    line-height: 130%;
 }
 
-.pusername {
-    font-family: hind semibold;
-    font-size:15px;
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+}
+
+.inp .label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
     color: #424242;
-    margin-top: 50px;
+    font-family: Proxima Nova Semibold;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
 }
 
+.inp .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #e53935;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+    border-bottom-color: #e53935;
+}
 
-input[type="text"] {
-    box-sizing: border-box;
-    width: 200px;
-    height: calc(3em + 2px);
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1.5em;
+.inp input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: Proxima Nova Semibold;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #424242;
+    background: none;
+    border-radius: 0;
+    color: #424242;
+    transition: all 0.15s ease;
+}
+
+.inp input:not(:placeholder-shown)+span {
+    color: #424242;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus {
+    background: none;
     outline: none;
-  }
-  input[type="text"][required]:focus {
-    border-color: #00C853;
-  }
-  input[type="text"][required]:focus + label[placeholder]:before {
-    color: #00C853;
-  }
-  input[type="text"][required]:focus + label[placeholder]:before,
-  input[type="text"][required]:valid + label[placeholder]:before {
-    transition-duration: 0.2s;
-    -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
-            transform: translate(0, -1.5em) scale(0.9, 0.9);
-  }
-  input[type="text"][required]:invalid + label[placeholder][alt]:before {
-    content: attr(alt);
-  }
-  input[type="text"][required] + label[placeholder] {
-    display: block;
-    pointer-events: none;
-    line-height: 1.25em;
-    margin-top: calc(-3em - 2px);
-    margin-bottom: calc((3em - 1em) + 2px);
-  }
-  input[type="text"][required] + label[placeholder]:before {
-    content: attr(placeholder);
-    display: inline-block;
-    margin: 0 calc(1em + 2px);
-    padding: 0 2px;
-    color: #898989;
-    white-space: nowrap;
-    transition: 0.3s ease-in-out;
-    background-image: linear-gradient(to bottom, #fff, #fff);
-    background-size: 100% 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
- 
-  input[type="password"] {
-    box-sizing: border-box;
-    width: 400px;
-    height: calc(3em + 2px);
-    margin: 0 0 1em;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1.5em;
-    resize: none;
-    outline: none;
-  }
-  input[type="password"][required]:focus {
-    border-color: #00C853;
-  }
-  input[type="password"][required]:focus + label[placeholder]:before {
-    color: #00C853;
-  }
-  input[type="password"][required]:focus + label[placeholder]:before,
-  input[type="password"][required]:valid + label[placeholder]:before {
-    transition-duration: 0.2s;
-    -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
-            transform: translate(0, -1.5em) scale(0.9, 0.9);
-  }
-  input[type="password"][required]:invalid + label[placeholder][alt]:before {
-    content: attr(alt);
-  }
-  input[type="password"][required] + label[placeholder] {
-    display: block;
-    pointer-events: none;
-    line-height: 1.25em;
-    margin-top: calc(-3em - 2px);
-    margin-bottom: calc((3em - 1em) + 2px);
-  }
-  input[type="password"][required] + label[placeholder]:before {
-    content: attr(placeholder);
-    display: inline-block;
-    margin: 0 calc(1em + 2px);
-    padding: 0 2px;
-    color: #898989;
-    white-space: nowrap;
-    transition: 0.3s ease-in-out;
-    background-image: linear-gradient(to bottom, #fff, #fff);
-    background-size: 100% 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .txtusername {
-    background-image: url(../Image/username.png);
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: 350px 15px;;
-    vertical-align: middle;
+    border-bottom: 2px solid #e53935;
 }
 
-.txtpassword {
-    background-image: url(../Image/password.png);
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: 350px 15px;;
-    vertical-align: middle;
+.inp input:focus+span {
+    color: #e53935;
+    transform: translateY(-26px) scale(0.75);
+    border-bottom-color: #e53935;
 }
 
-.lblrememberme, .lblforgot {
-    font-family: hind;
-    color: #424242;
-    font-size: 15px;
+.inp input:focus+span+.border {
+    transform: scaleX(1);
+}
+
+.check {
     cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+    margin-left: -50px;
 }
 
-.lblforgot {
-    margin-top:7px;
+.check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #616161;
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
 
-.lblrememberme:hover, .lblforgot:hover {
-    transition: all 0.2s;
-    color: #00C853;
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #616161;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
 }
-.div1 {
-    width: 400px;
+
+.check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+.check:hover svg {
+    stroke: #e53935;
+}
+
+#cbx:checked+.check svg {
+    stroke: #e53935;
+}
+
+#cbx:checked+.check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx:checked+.check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.lblremember {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 auto;
+    font-weight: 500;
+    text-align: center !important;
 }
 
 .btnlogin {
+    background-color: #e53935;
     color: white;
-    background-color: #00C853;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border:0px;
-    margin-top:15px;
-    width: 400px;
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     cursor: pointer;
-    outline:none;
-}
-
-.btnlogin:hover {
     transition: all 0.2s;
-    background-color: #00E676;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: rgb(204, 41, 47) 0px 2px 12px -6px;
+    font-feature-settings: normal;
+    margin-top: 20px;
 }
 
-.lbldonthave {
-    color: #424242;
-    font-size:15px;
-    font-family: hind semibold;
-    margin-top:20px;
-}
-
-.lblsign {
-    color: #1976D2;
-    text-decoration: underline;
+.pdonthave {
+    font-family: Roboto, sans-serif;
+    color: #e53935;
+    font-size: 0.9rem;
+    margin-top: 15px;
     cursor: pointer;
-}
-.phealth {
-    color: #1976D2;
-    font-family: Mont DEMO;
-    font-size:70px;
-    background-color: white;
-    padding:0px 10px;
-    font-weight:bold;
-    width: max-content;
-}
-
-.phealth1 {
-    font-family: hind;
-    color: white;
-    font-size:18px;
-    margin-top:10px;
-}
-
-.imgfooterlogo:hover {
-    filter: invert(90%) sepia(15%) saturate(1533%) hue-rotate(81deg) brightness(102%) contrast(88%);
+    font-weight: 500;
 }

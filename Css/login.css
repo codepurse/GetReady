@@ -1,224 +1,267 @@
-body, html {
-  widows: 100%;
-  height: 100%;
-  scroll-behavior: smooth;
-  overflow: hidden;
+body,
+html {
+    widows: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../Font/Proxima/ProximaNova-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Proxima Nova";
-  src: url("../Font/Proxima/ProximaNova-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Proxima Nova semibold";
-  src: url("../Font/Proxima/ProximaNova-Semibold.ttf");
+    font-family: "Proxima Nova semibold";
+    src: url("../Font/Proxima/ProximaNova-Semibold.ttf");
 }
 
 @media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1300px !important;
-  }
+    .container {
+        max-width: 1300px !important;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-  .con {
-    max-width: 1400px !important;
-  }
+    .con {
+        max-width: 1400px !important;
+    }
+}
+
+@media only screen and (max-width:393px) {
+    .pwelcomeback {
+        width: 100% !important;
+    }
+    .btnlogin {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .divCheck {
+        margin-left: -100px !important;
+    }
+}
+
+body {
+    animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.divLogo {
+    position: fixed !important;
+    top: 20px;
+    left: 20px;
 }
 
 .pwelcome {
-  font-family: Proxima Nova;
-  font-weight: bold;
-  color: #424242;
-  font-size: 2.4rem;
-  margin-top: 40px;
-  line-height: 130%;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #424242;
+    font-size: 2rem;
+    margin-top: 40px;
+    line-height: 130%;
 }
 
 .pwelcomeback {
-  font-family: Proxima Nova semibold;
-  color: #424242;
-  font-size: 1.2rem;
-  margin-top: 10px;
-  line-height: 130%;
+    font-family: Roboto, sans-serif;
+    color: #424242;
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 130%;
+    font-weight: 500;
+    width: 50%;
 }
 
 .inp {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  max-width: 280px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
 }
 
 .inp .label {
-  position: absolute;
-  top: 16px;
-  left: 0;
-  font-size: 16px;
-  color: #424242;
-  font-family: Proxima Nova Semibold;
-  font-weight: 500;
-  transform-origin: 0 0;
-  transition: all 0.2s ease;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #424242;
+    font-family: Proxima Nova Semibold;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
 }
 
 .inp .border {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background: #e53935;
-  transform: scaleX(0);
-  transform-origin: 0 0;
-  transition: all 0.15s ease;
-  border-bottom-color: #424242;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #e53935;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+    border-bottom-color: #e53935;
 }
 
 .inp input {
-  -webkit-appearance: none;
-  width: 100%;
-  border: 0;
-  font-family: Proxima Nova Semibold;
-  padding: 12px 0;
-  height: 48px;
-  font-size: 16px;
-  font-weight: 500;
-  border-bottom: 2px solid #424242;
-  background: none;
-  border-radius: 0;
-  color: #424242;
-  transition: all 0.15s ease;
-
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: Proxima Nova Semibold;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #424242;
+    background: none;
+    border-radius: 0;
+    color: #424242;
+    transition: all 0.15s ease;
 }
 
-
 .inp input:not(:placeholder-shown)+span {
-  color: #424242;
-  transform: translateY(-26px) scale(0.75);
+    color: #424242;
+    transform: translateY(-26px) scale(0.75);
 }
 
 .inp input:focus {
-  background: none;
-  outline: none;
-  border-bottom: 2px solid #424242;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #e53935;
 }
 
 .inp input:focus+span {
-  color: #424242;
-  transform: translateY(-26px) scale(0.75);
-  border-bottom-color: #424242;
+    color: #e53935;
+    transform: translateY(-26px) scale(0.75);
+    border-bottom-color: #e53935;
 }
 
 .inp input:focus+span+.border {
-  transform: scaleX(1);
-  
+    transform: scaleX(1);
 }
 
 .check {
-  cursor: pointer;
-  position: relative;
-  margin: auto;
-  width: 18px;
-  height: 18px;
-  -webkit-tap-highlight-color: transparent;
-  transform: translate3d(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+    margin-left: -50px;
 }
+
 .check:before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #616161;
-  opacity: 0;
-  transition: opacity 0.2s ease;
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #616161;
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
+
 .check svg {
-  position: relative;
-  z-index: 1;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #616161;
-  stroke-width: 1.5;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.2s ease;
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #616161;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
 }
+
 .check svg path {
-  stroke-dasharray: 60;
-  stroke-dashoffset: 0;
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
 }
+
 .check svg polyline {
-  stroke-dasharray: 22;
-  stroke-dashoffset: 66;
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
 }
 
 .check:hover svg {
-  stroke: #e53935;
+    stroke: #e53935;
 }
-#cbx:checked + .check svg {
-  stroke: #e53935;
+
+#cbx:checked+.check svg {
+    stroke: #e53935;
 }
-#cbx:checked + .check svg path {
-  stroke-dashoffset: 60;
-  transition: all 0.3s linear;
+
+#cbx:checked+.check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
 }
-#cbx:checked + .check svg polyline {
-  stroke-dashoffset: 42;
-  transition: all 0.2s linear;
-  transition-delay: 0.15s;
+
+#cbx:checked+.check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
 }
 
 .lblremember {
-  font-family: Proxima Nova Semibold;
-  color: #424242;
-  font-size: 0.9rem;
-  cursor: pointer;
-  margin-top: 2px;
+    font-family: Roboto, sans-serif;
+    color: #424242;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 2px;
+    margin-top: -10px;
 }
 
 .lblforgot {
-  font-family: Proxima Nova;
-  color: #616161;
-  font-size: 0.9rem;
-  cursor: pointer;
-  margin-top: 4px;
-  transition: all 0.2s;
+    text-decoration: none !important;
+    color: #424242;
 }
 
-.lblforgot:hover, .lblremember:hover {
-  color: #e53935;
+.lblforgot:hover,
+.lblremember:hover {
+    color: #e53935;
 }
 
 .btnlogin {
-  background-color: #e53935;
-  color: white;
-  width: 90%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
-  transition: all 0.2s;
-  border: 0px;
-  border-radius: 25px;
+    background-color: #e53935;
+    color: white;
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: rgb(204, 41, 47) 0px 2px 12px -6px;
+    font-feature-settings: normal;
 }
 
 .pdonthave {
-  font-family: Proxima Nova Semibold;
-  color: #e53935;
-  font-size: 1rem;
-  margin-top: 15px;
-  cursor: pointer;
-  margin-left: -60px;
+    font-family: Roboto, sans-serif;
+    color: #e53935;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .colbg {
-  height: 100vh;
-  background: linear-gradient( rgba(212, 154, 154, 0.4), rgba(0, 0, 0, 0.4)), url(../Image/bg2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 100vh;
+    background: linear-gradient( rgba(212, 154, 154, 0.4), rgba(0, 0, 0, 0.4)), url(../Image/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -4,6 +4,41 @@
     }
 }
 
+@media only screen and (max-width: 757px) {
+    .btnabout,
+    .btnstores,
+    .btnfaq,
+    .btncontact {
+        display: block !important;
+    }
+    .navLeftTop {
+        display: none !important;
+        background-color: black !important;
+    }
+    .navSearch {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .txtsearch {
+        width: 100% !important;
+    }
+    .pfew {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .colInfo {
+        margin: 0 auto !important;
+        padding-left: 17px !important;
+        padding-bottom: 20px !important;
+    }
+    input[type="text"] {
+        width: 100% !important;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @font-face {
     font-family: "Proxima Nova";
     src: url("../Font/Proxima/ProximaNova-Regular.ttf");
@@ -14,14 +49,20 @@
     src: url("../Font/hind/ProximaNova-Semibold.ttf");
 }
 
-body, html {
+@font-face {
+    font-family: "Mont Demo";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+body,
+html {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 }
 
 .pannouncement {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: white;
     font-size: 1rem;
 }
@@ -31,12 +72,23 @@ body, html {
     cursor: pointer;
 }
 
-.preadmore:hover, .pclose:hover, .btnabout:hover, .btnfaq:hover, .btncontact:hover, .btnstores:hover {
+.preadmore:hover,
+.pclose:hover,
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstores:hover,
+.btnhome:hover,
+.btnproduct:hover,
+.btnupdates:hover,
+.btnnews:hover,
+.btnlogin:hover,
+.btncart:hover {
     color: #e83b4f !important;
 }
 
 .pclose {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
@@ -49,13 +101,16 @@ body, html {
     margin-left: 10px;
 }
 
-.btnabout:hover, .btnfaq:hover, .btncontact:hover, .btnstore:hover {
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstore:hover {
     transition: all 0.2s;
     cursor: pointer;
 }
 
 .txtsearch {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: #424242;
     background-color: transparent;
     padding: 5px 10px;
@@ -67,35 +122,42 @@ body, html {
     width: 250px;
 }
 
-.btnhome:hover, .btnproduct:hover, .btncontact:hover, .btnnews:hover, .btnlogin:hover, .btncart:hover {
+.btnhome:hover,
+.btnproduct:hover,
+.btncontact:hover,
+.btnnews:hover,
+.btnlogin:hover,
+.btncart:hover {
     color: #e83b4f !important;
 }
 
 .pfew {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     font-size: 2rem;
     color: #424242;
     letter-spacing: 1.5px;
+    font-weight: 500;
 }
 
 .pbreadcrumbs {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     color: #212121;
     font-size: 1.1rem;
 }
 
 .dots {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     color: #212121;
     font-size: 2rem;
 }
 
 .ptitle {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     color: #212121;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .check {
@@ -167,21 +229,22 @@ body, html {
 }
 
 .pbilling {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     color: #757575;
     margin-left: 10px;
     margin-top: 10px !important;
+    font-weight: 500;
 }
 
 .paddresstitle {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     color: #757575;
     font-size: 0.9rem;
     font-weight: bold;
 }
 
 .txt {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     color: #757575;
     width: 450px;
     background-color: transparent;
@@ -189,6 +252,7 @@ body, html {
     font-size: 1rem;
     padding: 12px 30px;
     letter-spacing: 0.9px !important;
+    font-weight: 500;
 }
 
 input[type="radio"] {
@@ -198,23 +262,26 @@ input[type="radio"] {
 }
 
 .rdo {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     color: #757575;
     font-size: 1rem;
     cursor: pointer;
     width: 100% !important;
+    font-weight: 500;
 }
 
 .ptitle {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     color: #212121;
     font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .ptitledesc {
-    font-family: Proxima Nova Semibold;
+    font-family: Roboto, sans-serif;
     color: #424242;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .confooter {
@@ -223,13 +290,13 @@ input[type="radio"] {
 }
 
 .pfootertitle {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: #e83b4f;
     font-size: 1rem;
 }
 
 .pfooterdesc {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -237,7 +304,7 @@ input[type="radio"] {
 }
 
 .txtnewsletter {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: white;
     font-size: 1rem;
     background: url(../Image/right.png) no-repeat 97.25% 10px transparent;
@@ -250,12 +317,12 @@ input[type="radio"] {
 }
 
 .btnpayment {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: white;
     font-size: 1.1rem;
     border: 0px;
     border-radius: 5px;
-    background-color:#e83b4f;
+    background-color: #e83b4f;
     width: 100%;
     margin-top: 20px;
     padding: 10px 0px;
