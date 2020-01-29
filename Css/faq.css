@@ -1,0 +1,284 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    .btnabout,
+    .btnstores,
+    .btnfaq,
+    .btncontact {
+        display: block !important;
+    }
+    .navLeftTop {
+        display: none !important;
+        background-color: black !important;
+    }
+    .navSearch {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .txtsearch {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .accordion,
+    .content {
+        width: 100% !important;
+    }
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../Font/Proxima/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Proxima Nova semibold";
+    src: url("../Font/Proxima/ProximaNova-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Mont Demo";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.pannouncement {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+}
+
+.preadmore {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.preadmore:hover,
+.pclose:hover,
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstores:hover,
+.btnhome:hover,
+.btnproduct:hover,
+.btnupdates:hover,
+.btnnews:hover,
+.btnlogin:hover,
+.btncart:hover {
+    color: #e83b4f !important;
+}
+
+.pclose {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vl {
+    border-left: 1px solid #424242;
+    height: 5px !important;
+    margin-left: 10px;
+}
+
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstore:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.txtsearch {
+    font-family: Proxima Nova;
+    color: #424242;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid #9E9E9E;
+    outline: none;
+    border-radius: 5px;
+    background: url(../Image/search1.png) no-repeat 97% 7px white;
+    background-size: 18px;
+    width: 250px;
+}
+
+.btnhome:hover,
+.btnproduct:hover,
+.btncontact:hover,
+.btnnews:hover,
+.btnlogin:hover,
+.btncart:hover {
+    color: #e83b4f !important;
+}
+
+.pFaq {
+    font-family: Mont Demo;
+    font-size: 2rem;
+    color: #212121;
+}
+
+.pFaqSub {
+    font-family: Proxima Nova;
+    font-size: 1rem;
+    color: #424242;
+    margin-top: -20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.ulNav {
+    font-family: Proxima Nova;
+    color: #212121 !important;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 15px;
+    text-decoration: none !important;
+}
+
+.ulNav:hover {
+    color: #e83b4f !important;
+}
+
+.pNumber {
+    font-family: Proxima Nova semibold;
+    font-size: 1rem;
+    color: #212121;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.accordion a {
+    font-family: Proxima Nova;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 700px;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288a2;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+    cursor: pointer;
+    color: #e83b4f;
+}
+
+.accordion a:hover::after {
+    border: 1px solid #e83b4f;
+}
+
+.accordion a.active {
+    color: #e83b4f;
+    border-bottom: 1px solid #e83b4f;
+}
+
+.accordion a::after {
+    font-family: sans-serif;
+    content: '\0002B';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 0.9rem;
+    color: #7288a2;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+    text-align: center;
+    font-weight: bold;
+}
+
+.accordion a.active::after {
+    font-family: sans-serif;
+    content: '\02212';
+    color: #e83b4f;
+    border: 1px solid #e83b4f;
+}
+
+.accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+    width: 700px;
+}
+
+.accordion .content p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+}
+
+.confooter {
+    background-color: #212121;
+    padding: 0px 20px;
+}
+
+.pfootertitle {
+    font-family: Proxima Nova;
+    color: #e83b4f;
+    font-size: 1rem;
+}
+
+.pfooterdesc {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.txtnewsletter {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+    background: url(../Image/right.png) no-repeat 97.25% 10px transparent;
+    background-size: 20px;
+    border: 0px;
+    border-bottom: 1px solid #e83b4f;
+    width: 300px;
+    padding: 5px 10px;
+    outline: none;
+}
