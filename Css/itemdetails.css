@@ -4,6 +4,49 @@
     }
 }
 
+@media only screen and (max-width: 990px) {
+    .navLeftTop {
+        display: none !important;
+    }
+    .navSearch {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .txtsearch {
+        width: 100% !important;
+    }
+    .btnabout,
+    .btnstores,
+    .btnfaqs,
+    .btncontact {
+        display: block !important;
+    }
+    .divNews {
+        width: 95% !important;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    .btnabout,
+    .btnstores,
+    .btnfaq,
+    .btncontact {
+        display: block !important;
+    }
+    .navLeftTop {
+        display: none !important;
+        background-color: black !important;
+    }
+    .navSearch {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .txtsearch {
+        width: 100% !important;
+    }
+}
+
 @font-face {
     font-family: "Proxima Nova";
     src: url("../Font/Proxima/ProximaNova-Regular.ttf");
@@ -179,4 +222,70 @@ html {
 
 .imgProduct:hover {
     border-color: #e83b4f;
+}
+
+.pProduct {
+    font-family: Proxima Nova bold;
+    color: #212121;
+    font-size: 1.2rem;
+}
+
+.pProductSub {
+    font-family: Proxima Nova semibold;
+    color: #e83b4f;
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+
+.pItemDesc {
+    font-family: Proxima Nova;
+    color: #616161;
+    margin-top: 20px;
+}
+
+.confooter {
+    background-color: #212121;
+    padding: 0px 20px;
+}
+
+.pfootertitle {
+    font-family: Proxima Nova;
+    color: #e83b4f;
+    font-size: 1rem;
+}
+
+.pfooterdesc {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.txtnewsletter {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+    background: url(../Image/right.png) no-repeat 97.25% 10px transparent;
+    background-size: 20px;
+    border: 0px;
+    border-bottom: 1px solid #e83b4f;
+    width: 300px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.pItem {
+    font-family: Proxima Nova, sans-serif;
+    color: #212121;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.pItemDesc1 {
+    font-family: Proxima Nova;
+    color: #616161;
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 135%;
 }

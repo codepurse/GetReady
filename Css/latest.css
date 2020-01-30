@@ -1,0 +1,134 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    .btnabout,
+    .btnstores,
+    .btnfaq,
+    .btncontact {
+        display: block !important;
+    }
+    .navLeftTop {
+        display: none !important;
+        background-color: black !important;
+    }
+    .navSearch {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .txtsearch {
+        width: 100% !important;
+    }
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../Font/Proxima/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Proxima Nova semibold";
+    src: url("../Font/Proxima/ProximaNova-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Mont Demo";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.pannouncement {
+    font-family: Proxima Nova, sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+.preadmore {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.preadmore:hover,
+.pclose:hover,
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstores:hover,
+.btnhome:hover,
+.btnproduct:hover,
+.btnupdates:hover,
+.btnnews:hover,
+.btnlogin:hover,
+.btncart:hover {
+    color: #e83b4f !important;
+}
+
+.pclose {
+    font-family: Proxima Nova, sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vl {
+    border-left: 1px solid #424242;
+    height: 5px !important;
+    margin-left: 10px;
+}
+
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstore:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.txtsearch {
+    font-family: Proxima Nova, sans-serif;
+    color: #424242;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid #9E9E9E;
+    outline: none;
+    border-radius: 5px;
+    background: url(../Image/search1.png) no-repeat 97% 7px white;
+    background-size: 18px;
+    width: 250px;
+}
+
+.pLatest {
+    font-family: Mont Demo;
+    color: #212121;
+    font-size: 2rem;
+}
+
+.btngoback {
+    font-family: Proxima Nova semibold, sans-serif;
+    color: #212121;
+    font-size: 1rem;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btngoback:hover {
+    color: #e83b4f;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}

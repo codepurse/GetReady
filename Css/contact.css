@@ -1,0 +1,270 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    .btnabout,
+    .btnstores,
+    .btnfaq,
+    .btncontact {
+        display: block !important;
+    }
+    .navLeftTop {
+        display: none !important;
+        background-color: black !important;
+    }
+    .navSearch {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .txtsearch {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .conContact {
+        padding: 5px 30px;
+    }
+    .colInfo {
+        margin-top: -20% !important;
+    }
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../Font/Proxima/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Proxima Nova semibold";
+    src: url("../Font/Proxima/ProximaNova-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Mont Demo";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.pannouncement {
+    font-family: Proxima Nova, sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+.preadmore {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.preadmore:hover,
+.pclose:hover,
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstores:hover,
+.btnhome:hover,
+.btnproduct:hover,
+.btnupdates:hover,
+.btnnews:hover,
+.btnlogin:hover,
+.btncart:hover {
+    color: #e83b4f !important;
+}
+
+.pclose {
+    font-family: Proxima Nova, sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vl {
+    border-left: 1px solid #424242;
+    height: 5px !important;
+    margin-left: 10px;
+}
+
+.btnabout:hover,
+.btnfaq:hover,
+.btncontact:hover,
+.btnstore:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.txtsearch {
+    font-family: Proxima Nova, sans-serif;
+    color: #424242;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid #9E9E9E;
+    outline: none;
+    border-radius: 5px;
+    background: url(../Image/search1.png) no-repeat 97% 7px white;
+    background-size: 18px;
+    width: 250px;
+}
+
+.pLets {
+    font-family: Mont Demo;
+    color: #212121;
+    font-size: 2.5rem;
+}
+
+.pAsk {
+    font-family: Proxima Nova semibold, sans-serif;
+    color: #424242;
+    font-size: 1rem;
+    margin-top: -15px;
+}
+
+.pCell {
+    font-family: Proxima Nova, sans-serif;
+    color: #212121;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+}
+
+.inp .label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #424242;
+    font-family: Proxima Nova semibold, sans-serif;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+}
+
+.inp .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #e53935;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+    border-bottom-color: #e53935;
+}
+
+.inp input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: Proxima Nova semibold, sans-serif;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #424242;
+    background: none;
+    border-radius: 0;
+    color: #424242;
+    transition: all 0.15s ease;
+}
+
+.inp input:not(:placeholder-shown)+span {
+    color: #424242;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus {
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #e53935;
+}
+
+.inp input:focus+span {
+    color: #e53935;
+    transform: translateY(-26px) scale(0.75);
+    border-bottom-color: #e53935;
+}
+
+.inp input:focus+span+.border {
+    transform: scaleX(1);
+}
+
+textarea {
+    font-family: Proxima Nova semibold, sans-serif;
+    width: 100%;
+    color: #424242;
+    font-weight: 500;
+    border: 0px;
+    border-bottom: 2px solid #424242;
+}
+
+.pMessage {
+    font-family: Proxima Nova semibold, sans-serif;
+    color: #424242;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btnSend {
+    font-family: Proxima Nova semibold, sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 0px;
+    padding: 5px 10px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #e53935;
+    box-shadow: rgb(204, 41, 47) 0px 2px 12px -6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.confooter {
+    background-color: #212121;
+    padding: 0px 20px;
+}
+
+.pfootertitle {
+    font-family: Proxima Nova;
+    color: #e83b4f;
+    font-size: 1rem;
+}
+
+.pfooterdesc {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.txtnewsletter {
+    font-family: Proxima Nova;
+    color: white;
+    font-size: 1rem;
+    background: url(../Image/right.png) no-repeat 97.25% 10px transparent;
+    background-size: 20px;
+    border: 0px;
+    border-bottom: 1px solid #e83b4f;
+    width: 300px;
+    padding: 5px 10px;
+    outline: none;
+}
